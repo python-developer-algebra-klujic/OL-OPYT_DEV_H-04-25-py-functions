@@ -11,9 +11,19 @@ def generate_full_name(first_name:str, last_name:str = '') -> str:
 
 
 
-def podijeli(x, y):
-    rezultat = x / y
-    return rezultat
+def podijeli(x:int, y:int) -> float:
+    """Funkcija koja vraca rezutat dijeljnja. Ako je y = 0 onda ce vratiti -1
+    
+    Keyword arguments:
+    argument -- description
+    Return: return_description
+    """
+    
+    if y != 0:
+        return x / y
+    else:
+        # return 'Nije dopusteno dijeliti s nulom'
+        return -1.0
 
 
 
@@ -42,4 +52,12 @@ first_name = 'Ana'
 full_name = generate_full_name(first_name)
 print(full_name)
 
-print( podijeli(5, 0)  )
+
+x = 5
+y = 8
+rezultat = podijeli(x, y)
+
+if rezultat == -1:
+    print(f'Nije moguce dijeliti s nulom (y ima vrijendost {y}).')
+else:
+    print(f'Rezutat dijeljnje je: {rezultat:.3f}')
