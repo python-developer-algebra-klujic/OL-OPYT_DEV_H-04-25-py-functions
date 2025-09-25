@@ -8,6 +8,27 @@ def generate_full_name(first_name:str, last_name:str = '') -> str:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 first_name = 'Pero'
 last_name = 'Peric'
 full_name = generate_full_name(first_name, last_name)
