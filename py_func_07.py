@@ -11,3 +11,7 @@ def parni(x):
 
 parini_brojevi = list(filter(lambda x: x % 2 == 0, brojevi))
 print(parini_brojevi)
+
+
+kvadrati_brojeva = list(map(lambda x: x ** 2, brojevi))
+print(kvadrati_brojeva)
