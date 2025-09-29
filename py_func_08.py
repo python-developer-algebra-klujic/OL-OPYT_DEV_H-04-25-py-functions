@@ -69,3 +69,10 @@ invoices = [
 
 for invoice in invoices:
     print(invoice['total'])
+
+invoices_lt_1000 = list(filter(lambda x: x['total'] <= 1000.00, invoices))
+print(invoices_lt_1000)
+
+
+apply_tax = list(map(lambda x: x['total'] * 1.25, invoices))
+print(apply_tax)
